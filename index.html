@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versado-sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <!--menu-->
+    <header class="menu1">
+        <img src="imagens/logo1.png" alt="" class="logo">
+        <ul class="ul">
+            <li>
+                <a class="nav" href="https://media.tenor.com/5AeBrrSXk34AAAAd/gato.gif">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Quem Somos?</a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Loja Virtual
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Fale Conosco
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!--TÍTULO E IMAGEM-->
+    <div>
+        <h1>Sobre a Versado</h1>
+        <img src="imagens/imagens quem somos.png" alt="Imagens de materiais" class="imagem">
+    </div>
+    <!-- TEXTOS-->
+    <section class="todosostextos">
+        <div>
+            <h2>Nossa história </h2>
+            <p class="textos">
+                Versado nasceu como a primeira semente da Verse, uma pequena papelaria de bairro no interior de São
+                Paulo. Ao longo dos anos, crescemos e nos transformamos em uma referência para soluções criativas,
+                oferecendo produtos que abrangem desde itens para escritório até momentos especiais de aprendizado.
+                Nosso público é variado, desde estudantes em busca de materiais únicos até profissionais que buscam
+                produtos de qualidade para seu trabalho. Através da nossa jornada, estamos prontos para explorar novas
+                maneiras de oferecer inspiração e criatividade, conectando com o público em um ambiente online enquanto
+                mantemos nossa autenticidade e dedicação.
+            </p>
+        </div>
+
+        <div class="nossavisao">
+
+            <div>
+                <h2>Nossa visão</h2>
+                <p class="textos2">
+                    A Versado procura explorar o imaginário dos clientes, desde 2003, nossa empresa cresce cada vez mais
+                    sendo a papelaria com soluções criativas para diversos momentos. Buscamos trazer conforto, confiança
+                    um lugar onde todos se sentissem em casa, onde cada cliente fosse recebido com um sorriso sincero e
+                    um atendimento personalizado.
+                </p>
+            </div>
+
+            <div>
+                <img src="imagens/logo-colorida.png" alt="calameão" class="camaleao">
+            </div>
+
+        </div>
+
+        <div>
+            <h2>Criando laços</h2>
+            <p class="textos">
+                Nós equipe da Versado estamos empenhados em criar laços verdadeiros com nossos clientes, tornando cada
+                visita à nossa loja uma experiência calorosa e familiar. Você encontrará um espaço onde as crianças
+                podem explorar sua criatividade, onde os estudantes poderão encontrar o material ideal para suas aulas e
+                onde os profissionais podem descobrir as melhores ferramentas para suas tarefas diárias.
+            </p>
+        </div>
+    </section>
+
+    <!--MÍDIAS-->
+    <div class="midias">
+
+        <p>Nos acompanhe em: </p>
+
+        <div class="redes">
+            <img src="imagens/_TikTok.png" alt="">
+            <img src="imagens/_Twitter.png" alt="">
+            <img src="imagens/_Instagram.png" alt="">
+        </div>
+
+        <p class="verse">@versadopapelaria</p>
+
+    </div>
+
+    <!--RODAPE-->
+    <footer class="rodape">
+        <img src="imagens/logo1.png" alt=" logo de camaleão" class="logo">
+        <ul>
+            <li class="lista">Copyright © 2023 Versado | All Rights Reserved</li>
+        </ul>
+    </footer>
+
+
+    <!-- POP-UP -->
+    <div class="popup-caixa" id="popup">
+        <div class="popup-conteudo">
+            <div class="frescura">
+                <span class="fechar" onclick="fecharPopup()">&times;</span>
+                <h2 class="pop-text" id=" teste">Bem-vindo(a) à papelaria Versado</h2>
+                <p class="pop-text">Cadastre-se agora e ganhe 30% em sua primeira compra</p>
+                <form class="email">
+                    <input class="put-form" type="text" placeholder="Nome">
+                    <input class="put-form" type="text" placeholder="Digite seu email">
+                </form>
+
+                <button class="botao" onclick="fecharPopup()" ;>CADASTRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        /* Abertua do Pop-up */
+        function aberturaPopUp() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function fecharPopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        window.onload = function () {
+            setTimeout(aberturaPopUp, 2000);
+        }
+
+    </script>
+
+</body>
+
+</html>
